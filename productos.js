@@ -8,3 +8,7 @@ function cambiarGaleria(idGaleria) {
             seleccionada.classList.add('activa');
 
             }
+
+            document.addEventListener("DOMContentLoaded", () => {
+    cambiarGaleria('serie-a');
+    });
