@@ -2,16 +2,16 @@
 
 
 body {
-    .dosis-<uniquifier> {
+    .dosis-uniquifier {
         font-family: "Dosis", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-weight: weight;
         font-style: normal;
         text-align: center;
-        transition: background-color 0.5s ease;
+        transition: backgroun-color 0.5s ease;
     }
         /* Animación suave del color */
-        margin: 0;
+        margin: 50PX;
         padding: 50px;
         min-height: 100vh;
     }
