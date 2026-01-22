@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* HERO */
+.hero-img {
+  height: 300px;
+  background-color: #e9ecef;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ===============================
+   SEPARADORES HEADER / FOOTER
+   =============================== */
+
+/* Línea inferior del header */
+.header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d0d0d0;
+  opacity: 0.8;
+}
+
+/* Línea superior del footer */
+.footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d0d0d0;
+  opacity: 0.8;
+}
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+
+.hero-img {
+  min-height: 70vh;
+  background-color: #eef1f3; /* tu gris actual */
+  display: flex;
+}
+
+.hero-inner {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+}
