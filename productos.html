@@ -3,17 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Producto</title>
+    <link rel="stylesheet" href="productos.css">
 </head>
 <body>
     <head></head>
     <main>
-        <div class=""contenedor-galaerias>
-        <button
+        <div class="contenedor-galerias">
+        <img src =>
+        
+        <!-- Pasamos el ID de la galería y el COLOR deseado como argumentos -->
+        <button onclick="cambiarGaleria('serie-a', 'background: linear-gradient(#FEDE24, #FD6326)')">Terrestre</button>
+        <button onclick="cambiarGaleria('serie-b', 'background: linear-gradient(#FEEF70, #5C92D1)')">Acuatico</button>
+
+        <div id="serie-a" class="galeria">
+            <img src="./public/images/terrestre/balon.jpg" alt="Balones">
+            <img src="./public/images/terrestre/gorras.jpg" alt="Gorras">
+            <img src="./public/images/terrestre/guantes.jpg" alt="Guantes">
+            <img src="./public/images/terrestre/lentes.jpg" alt="Lentes">
+            <img src="./public/images/terrestre/playera.jpg" alt="Playeras">
+            <img src="./public/images/terrestre/tenis-blanco.jpg" alt="Tenis para correr">
+            <img src="./public/images/terrestre/tenis-negro.jpg" alt="Tenis para jugar">
+            <img src="./public/images/terrestre/top.jpg" alt="Ropa para mujer">
+            <img src="./public/images/terrestre/uniformes.jpg" alt="Uniformes">
+              
+                   
+        </div>
+
+        <div id="serie-b" class="galeria">
+            <img src="./public/images/acuatico/buceo.png" alt="Accesorios para bucear">
+            <img src="./public/images/acuatico/gogles.png" alt="Gogles">
+            <img src="./public/images/acuatico/gorra.png" alt="Gorras para nadar">
+            <img src="./public/images/acuatico/sandalias.png" alt="Sandalias">
+            <img src="./public/images/acuatico/tabla-surf.jpg" alt="Tablas de surf">
+            <img src="./public/images/acuatico/toallas.png" alt="Toallas">
+            <img src="./public/images/acuatico/traje-hombre.png" alt="Traje de baño para hombre">
+            <img src="./public/images/acuatico/traje-mujer.png" alt="Traje de baño para mujer">
+            <img src="./public/images/acuatico/traje-niña.png" alt="Traje de baño para niña">
+            <img src="./public/images/acuatico/traje-niño.png" alt="Traje de baño para niño">
+        </div>
+    </div>
     </main>
 
     </div>
     <footer></footer>
-    
+    <script src="productos.js"></script>
 </body>
 </html>
