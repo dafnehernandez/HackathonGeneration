@@ -21,10 +21,12 @@
 
                 <p class="hero-subtitle mt-3">
                     ¿Quieres crear un nuevo estilo de vida?<br>
-                    Conoce más, ¡haz tu registro!
+                    Para eso debes estar preparado 
+                    conoce más de nuestros productos<br>
+                    <strong>¡haz tu registro!</strong>
                 </p>
 
-                <a href="#registro" class="btn btn-dark btn-lg mt-4">
+                <a href="#registro" class="btn btn-dark btn-lg mt-4" aria-label="Ir al formulario de registro">
                     REGISTRO
                 </a>
             </div>
@@ -32,8 +34,50 @@
     </section>
 
 <!-- CARRUSEL -->
+<section class="container my-5">
 
+  <div id="sportsCarousel" class="carousel slide" data-bs-ride="carousel">
 
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="/public/images/deporte-terrestre.jpg" class="d-block w-100" alt="Deportes terrestres">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Supera tus límites</h5>
+          <p>Equipamiento para entrenar más fuerte cada día</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/public/images/deporte-acuatico.webp" class="d-block w-100" alt="Deportes acuáticos">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Domina el agua</h5>
+          <p>Rendimiento, técnica y resistencia</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/public/images/training.jpg" class="d-block w-100" alt="Entrenamiento">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Entrena con propósito</h5>
+          <p>El cambio comienza hoy ¿ya tienes todo para la ocasión?</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+ 
   <!-- PRODUCTOS -->
   <section class="container my-5">
     <h2 class="mb-4">Productos</h2>
@@ -61,8 +105,25 @@
     </div>
   </section>
 
-  <!-- REGISTRO -->
   <section class="container my-5">
+  <h2 class="mb-4 text-center">Productos</h2>
+
+  <div class="d-flex justify-content-center gap-3 mb-5">
+    <button class="btn btn-outline-dark btn-lg">
+      Deportes Terrestres
+    </button>
+
+    <button class="btn btn-outline-primary btn-lg">
+      Deportes Acuáticos
+    </button>
+  </div>
+
+  <!-- Aquí luego puedes cargar productos dinámicos -->
+</section>
+
+
+  <!-- REGISTRO -->
+  <section id="registro" class="container my-5">
     <h2 class="mb-3">Registro</h2>
 
     <p>
