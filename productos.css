@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Dosis:wght@200..800&display=swap');
+
+
+body {
+    .dosis-uniquifier {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        text-align: center;
+        transition: backgroun-color 0.5s ease;
+    }
+        /* Animación suave del color */
+        margin: 50PX;
+        padding: 50px;
+        min-height: 100vh;
+    }
+
+    .contenedor-galerias {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 15px;
+        display: inline-block;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .galeria {
+        display: none;
+        /* Oculto por defecto */
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .galeria.activa {
+        display: flex;
+        /* Se muestra cuando tiene la clase activa */
+        justify-content: center;
+    }
+
+    img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 25px;
+        margin: 5px;
+        background-color: #333;
+        color: white;
+        transition: transform 0.2s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
