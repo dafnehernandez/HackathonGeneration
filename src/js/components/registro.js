@@ -1,0 +1,80 @@
+const registro = () =>{
+  return `
+    <section id="registro" class="container my-5">
+
+      <div class="row align-items-center">
+
+        <!-- FORMULARIO IZQUIERDA -->
+        <div class="col-lg-7">
+
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nombre(s)</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Apellidos</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Contraseña</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Confirmar contraseña</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Dirección</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Ciudad</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Estado</label>
+              <select class="form-select">
+                <option selected>Elegir...</option>
+                <option>CDMX</option>
+                <option>Jalisco</option>
+                <option>Nuevo León</option>
+              </select>
+            </div>
+
+            <div class="col-12 d-grid mt-3">
+              <button class="btn btn-success">
+                Enviar
+              </button>
+            </div>
+          </form>
+
+        </div>
+
+        <!-- TEXTO DERECHA -->
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <h2 class="mb-3">Registro</h2>
+
+          <p>
+            Regístrate para recibir más información sobre nuestros productos
+            y promociones exclusivas.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  `
+}
+
+export {registro};
