@@ -15,10 +15,6 @@ background: #d7fbff;
 
 
 
-
-
-
-
 main > div:first-child {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
