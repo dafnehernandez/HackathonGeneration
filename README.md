@@ -19,11 +19,11 @@ Un proyecto de este calibre no habría sido posible sin el talento y la dedicaci
 
 | Participante | Rol / Contribución |
 | :--- | :--- |
-| **Luis Rivaldo Rodríguez** Full Stack Developer / Contribuidor
-| **Fátima Orozco** Full Stack Developer / Contribuidor
-| **Dafne Angélica Hernández Vázquez** Full Stack Developer / Revisor y Manteiner
-| **Uriel Cruz** Full Stack Developer / Contribuidor
-| **Genaro Paoli** Full Stack Developer / Contribuidor | 
+| **Luis Rivaldo Rodríguez** | Full Stack Developer / Contribuidor
+| **Fátima Orozco** | Full Stack Developer / Contribuidor
+| **Dafne Angélica Hernández Vázquez** | Full Stack Developer / Revisor y Manteiner
+| **Uriel Cruz** | Full Stack Developer / Contribuidor
+| **Genaro Paoli** | Full Stack Developer / Contribuidor | 
 
 ---
 
@@ -31,33 +31,40 @@ Un proyecto de este calibre no habría sido posible sin el talento y la dedicaci
 
 * **Lenguaje:** Javascript
 * **Frontend:** HTML5, CSS3 (Custom Media Queries) y Bootstrap 5
-* **Control de Versiones:** Git & GitHub (Siguiendo flujo de trabajo por ramas `feature/`)
+* **Control de Versiones:** Git & GitHub (Siguiendo flujo de trabajo por ramas con nombres acorde a las funcionalidades trabajadas)
 
 ---
 ## 🏗️ Estructura del proyecto
 project/
 ├── public/
-│   ├── images/
-│   └── fonts/
+│   ├── images/            # Imágenes públicas (logos, banners, etc.)
+│   └── fonts/             # Fuentes tipográficas del proyecto
+│
 ├── src/
-│   ├── components/       
+│   ├── components/        # Componentes HTML reutilizables
 │   │   ├── header.html
 │   │   ├── footer.html
-│   │   ├── registro.html
-│   ├── pages/           
-│   │   ├── products.html
+│   │   └── registro.html
+│   │
+│   ├── pages/             # Vistas principales del sitio
+│   │   └── products.html
+│   │
 │   ├── js/
-│   │   ├── components/   
+│   │   ├── components/    # Lógica JS para componentes reutilizables
 │   │   │   ├── load-components.js
-│   │   │   ├── registro.js
-│   │   ├── pages/       
-│   │   │   ├── products.js
-│   │   └── main.js      
+│   │   │   └── registro.js
+│   │   │
+│   │   ├── pages/         # Scripts específicos por página
+│   │   │   └── products.js
+│   │   │
+│   │   └── main.js        # Script principal de inicialización
+│   │
 │   └── css/
-│       ├── components/
-│       ├── pages/
-│       └── main.css
-├── index.html
-└── README.md
+│       ├── styles.css     # Estilos de componentes reutilizables
+│       ├── productos.css  # Estilos específicos de la página productos
+│
+├── index.html             # Punto de entrada principal
+└── README.md              # Documentación del proyecto
+
 
 ---
