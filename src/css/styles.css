@@ -2,33 +2,53 @@ body {
   font-family: Arial, sans-serif;
 }
 
+h1 {
+  font-family: "sporty-pro", sans-serif;
+  font-weight: 800;
+  font-style: norma
+}
+
+h2 {
+  font-family: "sporty-pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "sporty-pro-inline", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
 /* Hacer que el footer tenga el mismo ancho que el header */
 footer .container-fluid {
-    padding-left: var(--bs-gutter-x, 1.5rem);
-    padding-right: var(--bs-gutter-x, 1.5rem);
+  padding-left: var(--bs-gutter-x, 1.5rem);
+  padding-right: var(--bs-gutter-x, 1.5rem);
 }
 
 /* Reducir tamaño general del footer */
-footer h5, footer h6 {
-    font-size: 1rem;
-    font-weight: 600;
+footer h5,
+footer h6 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 footer .small {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 /* Ajustar espaciado */
 footer .py-4 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 /* Hacer el divider de borde a borde */
 footer hr {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ===============================
@@ -48,7 +68,7 @@ footer hr {
   height: 1px;
   background-color: #d0d0d0;
   opacity: 0.8;
-} 
+}
 
 /* Línea superior del footer */
 .footer::before {
@@ -88,7 +108,7 @@ footer hr {
 .hero-title {
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-subtitle {
@@ -121,13 +141,13 @@ footer hr {
 
 /* Carrusel */
 .carousel-caption {
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   padding: 1rem;
   border-radius: 6px;
 }
 
 
- /* RESPONSIVE */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .hero-title {
