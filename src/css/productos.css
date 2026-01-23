@@ -488,19 +488,39 @@ body.tema-terrestre .contenedor-galerias {
 
 /* Remover completamente efecto de lluvia en tarjetas en modo terrestre */
 body.tema-terrestre .tarjeta::before {
-    display: none !important;
+    display: none;
 }
 
 /* Estilo para cuando no hay efectos acuáticos */
 .sin-efectos-acuaticos .waves-container,
 .sin-efectos-acuaticos .rain-overlay {
-    display: none !important;
+    display: none;
 }
 
 /* Responsive para transiciones */
 @media (prefers-reduced-motion: reduce) {
     body, .rain-image-container img, .waves-container {
-        transition: none !important;
-        animation: none !important;
+        transition: none;
+        animation: none; 
     }
+}
+
+/* --- LÓGICA DE VISIBILIDAD SIN IMPORTANT --- */
+
+/* 1. Olas: solo se mueven y ven cuando no estamos en modo terrestre */
+.tema-terrestre .waves-container {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+/* 2. Lluvia: la ocultamos por completo en modo terrestre */
+.tema-terrestre .rain-overlay {
+    display: none;
+}
+
+/* 3. Tarjetas: Quitamos el efecto de gota (el pseudo-elemento ::before) */
+.tema-terrestre .tarjeta::before {
+    content: none; /* Esto elimina el elemento visualmente sin romper el CSS */
 }
