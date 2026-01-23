@@ -13,12 +13,30 @@
 
 <body>
 
-    <head></head>
+    <!-- Contenedor de olas animadas -->
+    <div class="waves-container">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 20 190 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.2)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.15)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.1)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.05)" />
+            </g>
+        </svg>
+    </div>
+
     <main>
 
-        <div>
-            <img src="/public/images/agua.png" alt=" Portada">
-        </div>
+                <!-- Contenedor principal con efecto de lluvia -->
+            <div class="rain-image-container">
+                <div class="rain-overlay"></div>
+                <img src="/public/images/buceando.jpg" alt=" Portada">
+            </div>
+     
         
         <div class="contenedor-galerias">
 
@@ -117,5 +135,4 @@
     <footer></footer>
     <script src="/src/js/pages/productos.js"></script>
 </body>
-
 </html>
