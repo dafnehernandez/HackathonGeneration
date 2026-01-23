@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <title>Producto</title>
     <link rel="stylesheet" href="/src/css/productos.css">
 </head>
-
 <body>
+
+    <!-- Botones fijos para volver al inicio y registrarse -->
+    <div class="botones-fijos">
+        <a href="/index.html" class="btn btn-dark shadow-sm">
+            <i class="fas fa-arrow-left me-2"></i>Volver al Inicio
+        </a>
+        
+        <a href="/registro.html" class="btn btn-success shadow-sm">
+            <i class="fas fa-user-plus me-2"></i>Regístrate
+        </a>
+    </div>
 
     <!-- Contenedor de olas animadas -->
     <div class="waves-container">
@@ -134,5 +144,7 @@
     </div>
     <footer></footer>
     <script src="/src/js/pages/productos.js"></script>
+      <!-- Bootstrap JS para los botones -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
