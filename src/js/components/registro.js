@@ -1,80 +1,89 @@
-const registro = () =>{
-  return `
-    <section id="registro" class="container my-5">
+// export const initRegistroForm = () => {
+//   const form = document.querySelector('#registro-form');
+//   if (!form) return;
+  
+//   form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     // Lógica de validación y envío
+//     console.log('Formulario enviado');
+//   });
+// };
 
-      <div class="row align-items-center">
 
-        <!-- FORMULARIO IZQUIERDA -->
-        <div class="col-lg-7">
+// src/js/registro.js
 
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label">Nombre(s)</label>
-              <input type="text" class="form-control">
-            </div>
+const estadosMexico = [
+  "Aguascalientes",
+  "Baja California", 
+  "Baja California Sur",
+  "Campeche",
+  "Chiapas",
+  "Chihuahua",
+  "CDMX",
+  "Coahuila",
+  "Colima",
+  "Durango",
+  "Estado de México",
+  "Guanajuato",
+  "Guerrero",
+  "Hidalgo",
+  "Jalisco",
+  "Michoacán",
+  "Morelos",
+  "Nayarit",
+  "Nuevo León",
+  "Oaxaca",
+  "Puebla",
+  "Querétaro",
+  "Quintana Roo",
+  "San Luis Potosí",
+  "Sinaloa",
+  "Sonora",
+  "Tabasco",
+  "Tamaulipas",
+  "Tlaxcala",
+  "Veracruz",
+  "Yucatán",
+  "Zacatecas"
+];
 
-            <div class="col-md-6">
-              <label class="form-label">Apellidos</label>
-              <input type="text" class="form-control">
-            </div>
+const cargarEstadosEnSelect = () => {
+  const select = document.getElementById('estadoSelect');
+  if (!select) return;
+  
+  // Ordenar alfabéticamente
+  estadosMexico.sort();
+  
+  // Agregar opciones
+  estadosMexico.forEach(estado => {
+    const option = document.createElement('option');
+    option.value = estado;
+    option.textContent = estado;
+    select.appendChild(option);
+  });
+  
+  console.log(`${estadosMexico.length} estados cargados`);
+};
 
-            <div class="col-12">
-              <label class="form-label">Correo</label>
-              <input type="email" class="form-control">
-            </div>
+const inicializarFormulario = () => {
+  // Cargar estados
+  cargarEstadosEnSelect();
+  
+  // Configurar evento de envío
+  const form = document.getElementById('formRegistro');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      console.log('Formulario de registro enviado');
+      // Aquí iría la lógica de envío real
+    });
+  }
+};
 
-            <div class="col-12">
-              <label class="form-label">Contraseña</label>
-              <input type="password" class="form-control">
-            </div>
-
-            <div class="col-12">
-              <label class="form-label">Confirmar contraseña</label>
-              <input type="password" class="form-control">
-            </div>
-
-            <div class="col-12">
-              <label class="form-label">Dirección</label>
-              <input type="text" class="form-control">
-            </div>
-
-            <div class="col-md-6">
-              <label class="form-label">Ciudad</label>
-              <input type="text" class="form-control">
-            </div>
-
-            <div class="col-md-6">
-              <label class="form-label">Estado</label>
-              <select class="form-select">
-                <option selected>Elegir...</option>
-                <option>CDMX</option>
-                <option>Jalisco</option>
-                <option>Nuevo León</option>
-              </select>
-            </div>
-
-            <div class="col-12 d-grid mt-3">
-              <button class="btn btn-success">
-                Enviar
-              </button>
-            </div>
-          </form>
-
-        </div>
-
-        <!-- TEXTO DERECHA -->
-        <div class="col-lg-5 mt-4 mt-lg-0">
-          <h2 class="mb-3">Registro</h2>
-
-          <p>
-            Regístrate para recibir más información sobre nuestros productos
-            y promociones exclusivas.
-          </p>
-        </div>
-
-      </div>
-    </section>
-  `
-}
-
-export {registro};
+// Exportar solo la función de inicialización
+export const initRegistro = () => {
+  // Esperar un momento para que el HTML se cargue
+  setTimeout(() => {
+    inicializarFormulario();
+  }, 100);
+};

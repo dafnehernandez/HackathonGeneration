@@ -1,68 +1,96 @@
 <section id="registro" class="container my-5">
-  <div class="row align-items-center">
-    <!-- FORMULARIO IZQUIERDA -->
-    <div class="col-lg-7">
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label class="form-label">Nombre(s)</label>
-          <input type="text" class="form-control">
-        </div>
-
-        <div class="col-md-6">
-          <label class="form-label">Apellidos</label>
-          <input type="text" class="form-control">
-        </div>
-
-        <div class="col-12">
-          <label class="form-label">Correo</label>
-          <input type="email" class="form-control">
-        </div>
-
-        <div class="col-12">
-          <label class="form-label">Contraseña</label>
-          <input type="password" class="form-control">
-        </div>
-
-        <div class="col-12">
-          <label class="form-label">Confirmar contraseña</label>
-          <input type="password" class="form-control">
-        </div>
-
-        <div class="col-12">
-          <label class="form-label">Dirección</label>
-          <input type="text" class="form-control">
-        </div>
-
-        <div class="col-md-6">
-          <label class="form-label">Ciudad</label>
-          <input type="text" class="form-control">
-        </div>
-
-        <div class="col-md-6">
-          <label class="form-label">Estado</label>
-          <select class="form-select">
-            <option selected>Elegir...</option>
-            <option>CDMX</option>
-            <option>Jalisco</option>
-            <option>Nuevo León</option>
-          </select>
-        </div>
-
-        <div class="col-12 d-grid mt-3">
-          <button type="submit" class="btn btn-success">
-            Enviar
-          </button>
-        </div>
-      </form>
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-8"> <!-- Contenedor más estrecho para mejor centrado -->
+      
+      <!-- Encabezado centrado -->
+      <div class="text-center">
+        <h2 class="display-2 text-dark al">Registro</h2>
+        <p>
+          Registrate para recibir más información sobre nuestros productos
+          y promociones exclusivas.
+        </p>
     </div>
+      
+      <!-- Contenedor del formulario con sombra para destacar -->
+      <div class="card border-0 shadow-sm p-4 p-md-5">
+        <div class="row g-4 align-items-center">
+          
+            <!-- FORMULARIO IZQUIERDA -->
+            <div class="col-lg-7">
+                <form class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Nombre(s)*</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                </div>
 
-    <!-- TEXTO DERECHA -->
-    <div class="col-lg-5 mt-4 mt-lg-0">
-      <h2 class="mb-3">Registro</h2>
-      <p>
-        Regístrate para recibir más información sobre nuestros productos
-        y promociones exclusivas.
-      </p>
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Apellidos*</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tus apellidos">
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label fw-semibold">Correo electrónico*</label>
+                    <input type="email" class="form-control" placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label fw-semibold">Contraseña*</label>
+                    <input type="password" class="form-control" placeholder="Crea una contraseña segura">
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label fw-semibold">Confirmar contraseña*</label>
+                    <input type="password" class="form-control" placeholder="Repite tu contraseña">
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label fw-semibold">Dirección</label>
+                    <input type="text" class="form-control" placeholder="Calle, número, colonia">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Ciudad</label>
+                    <input type="text" class="form-control" placeholder="Tu ciudad">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Estado*</label>
+                    <!-- id="estadoSelect" para buscar de la lista generada -->
+                    <select class="form-select" id="estadoSelect" required>
+                    <option value="" selected disabled>Selecciona tu estado</option>
+                    <!-- Los estados se cargarán dinámicamente desde registro.js -->
+                    </select>
+                    <div class="form-text">Selecciona tu estado de la lista</div>
+                </div>
+
+              <div class="col-12 d-grid mt-4">
+                <button type="submit" class="btn btn-success btn-lg py-3">
+                  <i class="fas fa-paper-plane me-2"></i>Enviar registro
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- TEXTO DERECHA - Ahora dentro del mismo card -->
+          <div class="col-lg-5">
+            <div class="p-4 bg-light rounded-3 h-100 d-flex flex-column justify-content-center">
+              <h4 class="text-dark mb-3">¿Por qué registrarte?</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ofertas exclusivas para miembros</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Primer acceso a nuevos productos</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Descuentos especiales</li>
+              </ul>
+              <div class="mt-4">
+                <p class="small text-muted mb-0">
+                  <i class="fas fa-lock me-1"></i> Tus datos están protegidos
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>

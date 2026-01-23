@@ -1,4 +1,5 @@
 import { initLayout } from './components/load-components.js';
+import { initRegistro } from './components/registro.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   console.log('DOM Content Loaded');
@@ -25,4 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   } catch (error) {
     console.error('Error loading layout:', error);
   }
+
+    // Inicializar interactividad del formulario
+   initRegistro();
 });
