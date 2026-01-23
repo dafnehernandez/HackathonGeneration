@@ -16,9 +16,12 @@ const loadComponent = async (id, path) => {
 };
 
 /**
- * Inicializa el layout cargando header y footer
+ * Inicializa el layout cargando header y footer enn medio carga a registro
  */
-export const initLayout = () => {
-  loadComponent('header-placeholder', '/src/components/header.html');
-  loadComponent('footer-placeholder', '/src/components/footer.html');
+export const initLayout = async () => {
+  console.log('Loading layout components...'); //debug
+  //cargar en orden componentes
+  await loadComponent('header-placeholder', '/src/components/header.html');
+  await loadComponent('registro-placeholder', '/src/components/registro.html');
+  await loadComponent('footer-placeholder', '/src/components/footer.html');
 };
