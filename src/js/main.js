@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error('Error loading layout:', error);
   }
 
-    // Inicializar interactividad del formulario
-   initRegistro();
+  // Verificar si estamos en la página con el formulario de registro
+  const registroSection = document.getElementById('registro');
+    if (registroSection) {
+      initRegistro();
+    }
 });

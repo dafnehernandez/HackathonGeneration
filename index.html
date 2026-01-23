@@ -30,8 +30,8 @@
                         <strong>¡Conoce más acerca de nuestros productos!</strong>
                     </p>
 
-                    <a href="#contactanos" class="btn btn-dark btn-lg mt-4" aria-label="Ir al formulario de contacto">
-                        CONTÁCTANOS
+                    <a href="#registro-placeholder" class="btn btn-dark btn-lg mt-4" aria-label="Ir al formulario de contacto">
+                        REGISTRATE AQUÍ
                     </a>
                 </div>
             </div>
@@ -82,7 +82,6 @@
     </div>
   </section>
 
-
     <!-- PRODUCTOS -->
     <section class="container my-5">
         <div class="row align-items-center gx-5">
@@ -97,7 +96,7 @@
 
             <a href="/src/pages/productos.html" class="btn btn-dark px-5 py-3"
             style="--bs-btn-hover-bg: #5e666e; --bs-btn-hover-border-color: #5e666e;">
-                Explorar productos
+                Explorar todos los productos
             </a>
         </div>
             <div class="col-md-6">
@@ -122,16 +121,18 @@
     </section>
 
     <section class="container my-5 border-bottom border-2">
-        <h2 class="mb-4 text-center">Productos</h2>
+        <h2 class="mb-4 text-center">Productos por categoría</h2>
 
         <div class="d-flex justify-content-center gap-3 mb-5">
-        <button class="btn btn-outline-dark btn-lg">
+        <!-- Botón Deportes Terrestres - Redirige a productos con parámetro -->
+        <a href="/src/pages/productos.html?categoria=terrestre" class="btn btn-outline-dark btn-lg">
             Deportes Terrestres
-        </button>
+        </a>
 
-        <button class="btn btn-outline-primary btn-lg">
+        <!-- Botón Deportes Acuáticos - Redirige a productos con parámetro -->
+        <a href="/src/pages/productos.html?categoria=acuatico" class="btn btn-outline-primary btn-lg">
             Deportes Acuáticos
-        </button>
+        </a>
         </div>
     </section>
 
