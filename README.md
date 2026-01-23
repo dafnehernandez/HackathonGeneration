@@ -35,6 +35,8 @@ Un proyecto de este calibre no habría sido posible sin el talento y la dedicaci
 
 ---
 ## 🏗️ Estructura del proyecto
+
+```text
 project/
 ├── public/
 │   ├── images/            # Imágenes públicas (logos, banners, etc.)
@@ -50,7 +52,7 @@ project/
 │   │   └── products.html
 │   │
 │   ├── js/
-│   │   ├── components/    # Lógica JS para componentes reutilizables
+│   │   ├── components/    # Lógica JS de componentes reutilizables
 │   │   │   ├── load-components.js
 │   │   │   └── registro.js
 │   │   │
@@ -60,11 +62,10 @@ project/
 │   │   └── main.js        # Script principal de inicialización
 │   │
 │   └── css/
-│       ├── styles.css     # Estilos de componentes reutilizables
-│       ├── productos.css  # Estilos específicos de la página productos
+│       ├── styles.css     # Estilos globales y de componentes
+│       └── productos.css  # Estilos específicos de la página Products
 │
 ├── index.html             # Punto de entrada principal
 └── README.md              # Documentación del proyecto
-
-
+```
 ---
