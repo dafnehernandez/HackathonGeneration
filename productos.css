@@ -10,53 +10,187 @@ body {
         text-align: center;
         transition: backgroun-color 0.5s ease;
     }
-        /* Animación suave del color */
-        margin: 50PX;
-        padding: 50px;
-        min-height: 100vh;
-    }
+background: #f95e50;
+}
 
-    .contenedor-galerias {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 15px;
-        display: inline-block;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
 
+
+
+
+
+
+main > div:first-child {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* La Imagen: Tamaño medio para que no se pixelee */
+main > div:first-child img {
+    width: 95%;              
+    max-width: 800px;        /* Evita el pixelado al no dejarla crecer más */
+    height: auto;            /* Mantiene la proporción real */
+    display: block;
+    object-fit: contain;     
+    border-radius: 15px;     
+    
+}
+
+.contenedor-galerias {
+    background: #4bc2a0;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.galeria.activa {
+    display: flex;
+    /* Se muestra cuando tiene la clase activa */
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    transition: transform 0.2s;
+    
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+.galeria {
+    
+    display: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.tarjeta {
+
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta h3 {
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Terrestre (Serie A) */
+.color-1 {
+    background-color: #fede24;
+}
+
+.color-2 {
+    background-color: #fd6326;
+}
+
+.color-3 {
+    background-color: #fede24;
+}
+
+.color-4 {
+    background-color: #Fd3626;
+}
+
+.color-5 {
+    background-color: #Fede24;
+}
+
+.color-6 {
+    background-color: #fd6326;
+}
+
+.color-7 {
+    background-color: #fede24;
+}
+
+.color-8 {
+    background-color: #fd6326;
+}
+
+.color-9 {
+    background-color: #fede24;
+}
+
+/* Acuático (Serie B) */
+.color-11 {
+    background-color: #feef70;
+}
+
+.color-12 {
+    background-color: #3498DB;
+}
+
+.color-13 {
+    background-color: #feef70;
+}
+
+.color-14 {
+    background-color: #5c92d1;
+}
+
+.color-15 {
+    background-color: #feef70;
+}
+
+.color-16 {
+    background-color: #5c92d1;
+}
+
+.color-17 {
+    background-color: #feef70;
+}
+
+.color-18 {
+    background-color: #5c92d1
+}
+
+.color-19 {
+    background-color: #feef70;
+}
+
+.color-20 {
+    background-color: #5c92d1;
+}
+
+/* Ajustes para Móviles */
+@media (max-width: 768px) {
     .galeria {
-        display: none;
-        /* Oculto por defecto */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 15px;
-        margin-top: 20px;
-    }
-
-    .galeria.activa {
-        display: flex;
-        /* Se muestra cuando tiene la clase activa */
-        justify-content: center;
-    }
-
-    img {
-        width: 250px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     button {
-        padding: 12px 24px;
-        font-size: 16px;
-        cursor: pointer;
-        border: none;
-        border-radius: 25px;
-        margin: 5px;
-        background-color: #333;
-        color: white;
-        transition: transform 0.2s;
+        width: 80%;
+        font-size: 1rem;
     }
-
-    button:hover {
-        transform: scale(1.05);
-    }
+}
