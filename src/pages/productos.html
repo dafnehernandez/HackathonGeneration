@@ -31,18 +31,18 @@
 
     <main>
 
-                <!-- Contenedor principal con efecto de lluvia -->
-            <div class="rain-image-container">
-                <div class="rain-overlay"></div>
-                <img src="/public/images/buceando.jpg" alt=" Portada">
-            </div>
+        <!-- Contenedor principal con efecto de lluvia -->
+        <div class="rain-image-container">
+            <div class="rain-overlay"></div>
+            <img src="/public/images/buceando.jpg" id="imagen-principal" alt="Portada">       
+        </div>
      
-        
         <div class="contenedor-galerias">
-
             <!-- Pasamos el ID de la galería y el COLOR deseado como argumentos -->
-            <button onclick="cambiarGaleria('serie-a','#FD6326')">Terrestre</button>
-            <button onclick="cambiarGaleria('serie-b','#5C92D1')">Acuatico</button>
+            <!-- <button onclick="cambiarGaleria('serie-a','#FD6326')">Terrestre</button>
+            <button onclick="cambiarGaleria('serie-b','#5C92D1')">Acuatico</button> -->
+            <button onclick="cambiarTema('terrestre', '#FD6326')" class="btn-tema" id="btn-terrestre">Terrestre</button>
+            <button onclick="cambiarTema('acuatico', '#129fae')" class="btn-tema" id="btn-acuatico">Acuático</button>
 
             <div id="serie-a" class="galeria">
                 <div class="tarjeta color-1">

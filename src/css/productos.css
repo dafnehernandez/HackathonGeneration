@@ -446,3 +446,61 @@ button:hover {
         padding: 10px 10px 50px;
     }
 }
+
+
+/* Efectos de transición para cambios de tema */
+body.theme-transition {
+    transition: background-color 0.8s ease, background-image 0.8s ease;
+}
+
+/* Botones de tema activos */
+.btn-tema.activo {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    opacity: 1 !important;
+}
+
+/* Transición suave para imagen principal */
+.rain-image-container img {
+    transition: opacity 0.5s ease;
+}
+
+/* Efecto de fade para cambio de imagen */
+.imagen-fade {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+/* Efectos terrestres específicos */
+body.tema-terrestre .tarjeta {
+    box-shadow: 0 8px 20px rgba(253, 99, 38, 0.15);
+    border: 1px solid rgba(253, 99, 38, 0.1);
+}
+
+body.tema-terrestre .contenedor-galerias {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(253, 99, 38, 0.2);
+}
+
+/* Remover completamente efecto de lluvia en tarjetas en modo terrestre */
+body.tema-terrestre .tarjeta::before {
+    display: none !important;
+}
+
+/* Estilo para cuando no hay efectos acuáticos */
+.sin-efectos-acuaticos .waves-container,
+.sin-efectos-acuaticos .rain-overlay {
+    display: none !important;
+}
+
+/* Responsive para transiciones */
+@media (prefers-reduced-motion: reduce) {
+    body, .rain-image-container img, .waves-container {
+        transition: none !important;
+        animation: none !important;
+    }
+}
