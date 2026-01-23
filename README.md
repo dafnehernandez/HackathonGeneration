@@ -19,11 +19,11 @@ Un proyecto de este calibre no habría sido posible sin el talento y la dedicaci
 
 | Participante | Rol / Contribución |
 | :--- | :--- |
-| **Luis Rivaldo Rodríguez** 
-| **Fátima Orozco** 
-| **Dafne Angélica Hernández Vázquez** 
-| **Uriel Cruz** 
-| **Genaro Paoli** | 
+| **Luis Rivaldo Rodríguez** Full Stack Developer / Contribuidor
+| **Fátima Orozco** Full Stack Developer / Contribuidor
+| **Dafne Angélica Hernández Vázquez** Full Stack Developer / Revisor y Manteiner
+| **Uriel Cruz** Full Stack Developer / Contribuidor
+| **Genaro Paoli** Full Stack Developer / Contribuidor | 
 
 ---
 
@@ -32,5 +32,32 @@ Un proyecto de este calibre no habría sido posible sin el talento y la dedicaci
 * **Lenguaje:** Javascript
 * **Frontend:** HTML5, CSS3 (Custom Media Queries) y Bootstrap 5
 * **Control de Versiones:** Git & GitHub (Siguiendo flujo de trabajo por ramas `feature/`)
+
+---
+## 🏗️ Estructura del proyecto
+project/
+├── public/
+│   ├── images/
+│   └── fonts/
+├── src/
+│   ├── components/       
+│   │   ├── header.html
+│   │   ├── footer.html
+│   │   ├── registro.html
+│   ├── pages/           
+│   │   ├── products.html
+│   ├── js/
+│   │   ├── components/   
+│   │   │   ├── load-components.js
+│   │   │   ├── registro.js
+│   │   ├── pages/       
+│   │   │   ├── products.js
+│   │   └── main.js      
+│   └── css/
+│       ├── components/
+│       ├── pages/
+│       └── main.css
+├── index.html
+└── README.md
 
 ---
