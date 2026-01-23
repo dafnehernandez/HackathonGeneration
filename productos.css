@@ -10,7 +10,7 @@ body {
         text-align: center;
         transition: backgroun-color 0.5s ease;
     }
-background: #f95e50;
+background: #d7fbff;
 }
 
 
@@ -39,7 +39,7 @@ main > div:first-child img {
 }
 
 .contenedor-galerias {
-    background: #4bc2a0;
+    background: #58b0b3;
     padding: 20px;
     border-radius: 15px;
     display: inline-block;
@@ -61,7 +61,7 @@ button {
     border: none;
     border-radius: 25px;
     margin: 5px;
-    background-color: #333;
+    background-color:#022b2c;
     color: white;
     transition: transform 0.2s;
     
@@ -106,52 +106,57 @@ button:hover {
 
 /* Terrestre (Serie A) */
 .color-1 {
-    background-color: #fede24;
+    background-color: #7e9dff;
 }
 
 .color-2 {
-    background-color: #fd6326;
+    background-color: #7e9dff;
+    
 }
 
 .color-3 {
-    background-color: #fede24;
+    background-color: #7e9dff;
+    
 }
 
 .color-4 {
-    background-color: #Fd3626;
+        background-color: #7e9dff;
+;
 }
 
 .color-5 {
-    background-color: #Fede24;
+        background-color: #7e9dff;
+;
 }
 
 .color-6 {
-    background-color: #fd6326;
+        background-color: #7e9dff;
+;
 }
 
 .color-7 {
-    background-color: #fede24;
+     background-color: #7e9dff;
 }
 
 .color-8 {
-    background-color: #fd6326;
+    background-color: #7e9dff;
 }
 
 .color-9 {
-    background-color: #fede24;
+     background-color: #7e9dff;
 }
 
 /* Acuático (Serie B) */
 .color-11 {
-    background-color: #feef70;
+     background-color: #7e9dff;
 }
 
 .color-12 {
-    background-color: #3498DB;
+     background-color: #7e9dff;
 }
 
 .color-13 {
-    background-color: #feef70;
+     background-color: #7e9dff;
 }
 
 .color-14 {
@@ -159,27 +164,27 @@ button:hover {
 }
 
 .color-15 {
-    background-color: #feef70;
+     background-color: #7e9dff;
 }
 
 .color-16 {
-    background-color: #5c92d1;
+     background-color: #7e9dff;
 }
 
 .color-17 {
-    background-color: #feef70;
+     background-color: #7e9dff;
 }
 
 .color-18 {
-    background-color: #5c92d1
+     background-color: #7e9dff;
 }
 
 .color-19 {
-    background-color: #feef70;
+     background-color: #7e9dff;
 }
 
 .color-20 {
-    background-color: #5c92d1;
+     background-color: #7e9dff;
 }
 
 /* Ajustes para Móviles */
